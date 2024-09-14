@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+</head>
+
+<body>
+    <header class="section_navbar">
+        <section class="top_text">
+            <div class="head container">
+                <div class="head_text">
+                    <p>Free shiping 30 day return or refund guarentee</p>
+                </div>
+                <div class="sign_in_up">
+                    <a href="#">SIGN IN</a>
+                    <a href="#">SIGN UP</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- For navBar -->
+
+        <div class="container navBar">
+            <div class="navBar_brand">
+                <a href="index.html">
+                    <div class="logo">
+                        <p>E-Cart</p>
+                       </div>
+                </a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li class="nav_item"><a href="/" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="about.html" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="product.html" class="nav_link">Product</a></li>
+                    <li class="nav_item"><a href="contact.html" class="nav_link">contact</a></li>
+                    <li class="navItem">
+                        <a href="addToCart.html" class='navlink add_To_cart_button' id="cartValue">
+                            <i class="fas fa-cart-shopping">0</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="container main">
+        <h2 class="section_common_heading">Contact Us</h2>
+        <p class="section_common_subheading">
+            Get in toucch with with us.We are alway her eto help us
+        </p>
+        </div>
+    </section>
+    <div class="container grid grid-two--cols">
+        <div class="contact-content">
+            <form  action="https://formspree.io/f/xzzpdqkk" method="POST">
+                <div class="grid grid-two--cols ">
+                    <div>
+                        <label for="usename">username</label>
+                        <input type="text" name="username" id="username" autocomplete="off" required
+                            placeholder="enter your name ">
+                    </div>
+                    <div>
+                        <label for="emails">enter your email</label>
+                        <input type="email" name="email" id="emails" autocomplete="off" required
+                            placeholder="enter your email ">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="suject">subject</label>
+                    <input type="text" id="suject" name="subject" placeholder="your main title">
+                </div>
+                <div class="mb-3">
+                    <label for="message">message</label>
+                    <textarea name="message" id="message" cols="25" rows="7"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-submit">send message</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="contact-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115132.86724286235!2d85.06064028351005!3d25.60816916368821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29937c52d4f05%3A0x831a0e05f607b270!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1699657257954!5m2!1sen!2sin"
+                width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

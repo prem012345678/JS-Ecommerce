@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-commerce</title>
+</head>
+
+<body>
+  <header class="section_navbar">
+    <section class="top_text">
+      <div class="head container">
+        <div class="head_text">
+          <p>Free shiping 30 day return or refund guarentee</p>
+        </div>
+        <div class="sign_in_up">
+          <a href="#">SIGN IN</a>
+          <a href="#">SIGN UP</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- For navBar -->
+
+    <div class=" navBar">
+      <div class="navBar_brand">
+        <a href="index.html">
+          <div class="logo">
+            <p>E-Cart</p>
+          </div>
+        </a>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li class="nav_item"><a href="/" class="nav_link">Home</a></li>
+          <li class="nav_item"><a href="about.html" class="nav_link">About</a></li>
+          <li class="nav_item"><a href="product.html" class="nav_link">Product</a></li>
+          <li class="nav_item"><a href="contact.html" class="nav_link">contact</a></li>
+          <li class="navItem">
+            <a href="addToCart.html" class='navlink add_To_cart_button' id="cartValue">
+              <i class="fas fa-cart-shopping"><span>0</span></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- HERO SECTION -->
+  <main>
+    <section class="section_hero">
+      <div class="container grid grid_two_cols">
+        <div class="section_hero_content">
+          <p class="hero_subHeading">Explore the latest intech industries </p>
+          <h1 class="hreo_heading">your destionation for cutting adges gadget</h1>
+          <p class="hero_para">Online Shopping Site — Find the largest selection
+            from all brands at the lowest prices in India. Online Shopping Site
+            for Mobiles, Electronics, Furniture, Grocery. Download Mobile App.
+            Payment Options Available. Gift Cards Available. Highlights:
+            Gift Cards Available, Brand Directory Available.</p>
+          <button class="btn">explore youre product</button>
+        </div>
+        <div class="section_hero_image" data-aos="fade-up" data-aos-delay="600">
+          <figure><img src="./image/shoping.jpg" alt="shoping image"></figure>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--START PRODUCT SECION -->
+  <section class="sectio_extra_product">
+    <div class="container grid grid_three_cols">
+      <div class="div_extra grid grid_two_cols">
+        <div class="extra_text">
+          <p>New Year Sale</p>
+          <h3>get an extrasale got 50% sale</h3>
+          <a href="#">shop now</a>
+        </div>
+        <div class="extra_image laptop">
+          <img src="./image/img1.webp" alt="laptop">
+        </div>
+      </div>
+      <div class="div_extra grid grid_two_cols">
+        <div class="extra_text">
+          <p>New Year Sale</p>
+          <h3>get an extrasale got 50% sale</h3>
+          <a href="#">shop now</a>
+        </div>
+        <div class="extra_image laptop">
+          <img src="./image/img2.avif" alt="laptop">
+        </div>
+      </div>
+      <div class="div_extra grid grid_two_cols">
+        <div class="extra_text">
+          <p>New Year Sale</p>
+          <h3>get an extrasale got 50% sale</h3>
+          <a href="#">shop now</a>
+        </div>
+        <div class="extra_image laptop">
+          <img src="./image/img3.jpg" alt="laptop">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- START POLICY  -->
+  <section class="section_policy">
+    <div class="container grid grid_four_cols">
+      <div class="div_policy">
+        <div class="icon">
+          <i class="fas fa-truck-fast"></i>
+        </div>
+        <div class="div_policy_text">
+          <p>world wide shiping</p>
+          <p>order above $100</p>
+        </div>
+      </div>
+
+      <div class="div_policy">
+        <div class="icon">
+          <i class="fas fa-rotate"></i>
+        </div>
+        <div class="div_policy_text">
+          <p>Easy 30 day return policy</p>
+          <p>Back return in 7 days</p>
+        </div>
+      </div>
+
+      <div class="div_policy">
+        <div class="icon">
+          <i class="fa-solid fa-hand-holding-droplet"></i>
+        </div>
+        <div class="div_policy_text">
+          <p>Money back guarentee </p>
+          <p>guarantee within 30 days</p>
+        </div>
+      </div>
+
+      <div class="div_policy">
+        <div class="icon">
+          <i class="fa-solid fa-headset"></i>
+        </div>
+        <div class="div_policy_text">
+          <p>Easy online support </p>
+          <p>27/7 any time support</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- product section  -->
+
+  <section class="section_product">
+    <div class="container">
+      <div class="section_common_heading">
+        Check out in the store
+      </div>
+    </div>
+    <section class="container">
+      <div id="productConainer"> </div>
+    </section>
+  </section>
+
+  <!-- TEMPLET SEECETION -->
+  <template id="productTemplet">
+    <div class="cards" id="cardValue">
+      <article class="information_card">
+        <span class="catogary"> ... </span>
+        <div class="imageContainer">
+          <img class="productImage" src="" alt="">
+        </div>
+
+        <h2 class="productName">Name </h2>
+        <div class="productRating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+
+        <p class="productDescription"> </p>
+
+        <div class="productPriceElememt">
+          <p class="productPrice"></p>
+          <p class="actualPrice"></p>
+        </div>
+
+        <div class="productStockElemnt">
+          <p class="prductProperty">Total stock available : </p>
+          <p class="productStock"></p>
+        </div>
+
+        <div class="productQuantityElement">
+          <p class="productProperty">Quantity (pieces)</p>
+          <div class="stockElement">
+            <button class="cartIncrase">+</button>
+            <p class="productQuantity">1</p>
+            <button class="cartDecrease">-</button>
+          </div>
+        </div>
+
+        <button class="add_to_cart">
+          <i class="fas fa-cart-shopping"></i>
+          Add to cart
+        </button>
+      </article>
+    </div>
+  </template>
+
+  <!-- Detail part  -->
+
+  <section class="secton_why--choose">
+    <div class="container">
+
+    </div>
+    <div class="container  grid grid-three--cols">
+
+      <div class="choose-left--div text-align--right">
+        <div class="why-choose--div">
+          <p class="cmmon-text--highlight">1</p>
+          <h3 class="section-common--title">wide selection</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nihil libero voluptate laborum repudiandae. Perferendis
+            accusantium repellendus sunt ipsam, assumenda dolor!</p>
+        </div>
+        <div class="why-choose--div">
+          <p class="cmmon-text--highlight">2</p>
+          <h3 class="section-common--title">quality assurance</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nihil libero voluptate laborum repudiandae. Perferendis
+            accusantium repellendus sunt ipsam, assumenda dolor!</p>
+        </div>
+        <div class="why-choose--div">
+          <p class="cmmon-text--highlight">3</p>
+          <h3 class="section-common--title">expert instruction</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nihil libero voluptate laborum repudiandae. Perferendis
+            accusantium repellendus sunt ipsam, assumenda dolor!</p>
+        </div>
+      </div>
+      <!-- image center  -->
+      <div class="choose-center--div">
+        <figure>
+          <img src="./image/shop.png" alt="image">
+        </figure>
+      </div>
+
+      <!-- rightside -->
+      <div class="choose-right--div text-align--left">
+        <div class="why-choose--div">
+          <p class="cmmon-text--highlight">4</p>
+          <h3 class="section-common--title">expert Guidence</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nihil libero voluptate laborum repudiandae. Perferendis
+            accusantium repellendus sunt ipsam, assumenda dolor!</p>
+        </div>
+        <div class="why-choose--div">
+          <p class="cmmon-text--highlight">5</p>
+          <h3 class="section-common--title">convenient shoping</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nihil libero voluptate laborum repudiandae. Perferendis
+            accusantium repellendus sunt ipsam, assumenda dolor!</p>
+        </div>
+        <div class="why-choose--div">
+          <p class="cmmon-text--highlight">6</p>
+          <h3 class="section-common--title">expert instruction</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nihil libero voluptate laborum repudiandae. Perferendis
+            accusantium repellendus sunt ipsam, assumenda dolor!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="container grid four-grid--cols">
+        <div class="footer-1--div">
+            <div class="logo-brand">
+                <a href="index.html" class="footer-subheading"></a>
+            </div>
+            <p>ABOUT </p>
+            <div class="social-footer--icon">
+             
+                <ul>
+                    <li>Careers</li>
+                    <li>  Stories</li>
+                    <li> Press</li>
+                    <li>Corporate Informationt</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-2--div">
+            <p class="footer-subheading">Shoping</p>
+            <ul>
+                <li>computer store</li>
+                <li>laptop store</li>
+                <li>accessories</li>
+                <li>sales & discount</li>
+
+            </ul>
+
+        </div>
+        <div class="footer-3--div">
+            <p class="footer-subheading"> experience </p>
+            <ul>
+                <li><a href="index.html">contat us</a></li>
+                <li><a href="index.html">payment method</a></li>
+                <li><a href="index.html">delivery</a></li>
+                <li><a href="index.html">return and exchange</a></li>
+
+            </ul>
+
+        </div>
+        <div class="footer-4--div">
+            <p class="footer-subheading">privacy</p>
+            <ul>
+                <li><a href="index.html">Security</a></li>
+                <li><a href="index.html">Sitemap</a></li>
+                <li><a href="index.html">Grievance Redressal</a></li>
+                <li><a href="index.html">EPR Complian</a></li>
+            </ul>
+
+        </div>
+    </div>
+</footer>
+
+
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>

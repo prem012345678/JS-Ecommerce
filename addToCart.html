@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href='ShowCart/cart.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+</head>
+
+<body>
+    <header class="section_navBar">
+        <section class="top_text">
+            <div class="head container">
+                <div class="head_text">
+                    <p>Free shiping for ,30 days return or refund guarantee</p>
+                </div>
+                <div class="sign_in_up">
+                    <a href="#">SINGN IN</a>
+                    <a href="#">SINGN UP</a>
+                </div>
+            </div>
+        </section>
+        <div class=" navBar">
+            <div class="nav_brand">
+                <a href="index.html">
+                    <div class="logo">
+                        <p>E-Cart</p>
+                       </div>
+                </a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li class="navitem"><a href="/" class="nav_link">Home</a></li>
+                    <li class="navItem">
+                        <a href="about.html" class='nav_link'>About</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="product.html" class='nav_link'>Product</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="contact.html" class='nav_link'>Contact</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="addToCart.html" class='nav_link add_To_cart_button' id="cartValue">
+                            <i class="fas fa-cart-shopping"><span>0</span></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="addToCardElement">
+        <div class="container">
+            <section>
+                <div id="productContainer"> </div>
+            </section>
+
+            <section class="productCartTotalElem">
+                <div class="productCartTotalElement">
+                    <p >selected after sumarry</p>
+                    <div class="productOrderTotal">
+                        <div>
+                            <p>sub Total :</p>
+                            <p class="produttSubTotal">0</p>
+                        </div>
+                        <div>
+                            <p>Tax :</p>
+                            <p class="productax">₹ 50</p>
+                        </div>
+                        <hr />
+                        <div>
+                            <p>final Total :</p>
+                            <p class="productFinalTotal">000</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- produc Section js  -->
+
+    <template id="productTemplet">
+        <div class="cards" id="cardValue">
+            <article class="information_card">
+                <span class="catogary"> ... </span>
+                <div class="imageContainer">
+                    <img class="productImage" src="" alt="">
+                </div>
+
+                <h2 class="productName">Name </h2>
+
+
+
+                <p class="productPrice"></p>
+
+                <div class="productStockElemnt">
+                    <!-- <p class="prductProperty">Total stock available : </p> -->
+                    <p class="productStock"></p>
+                </div>
+
+                <div class="productQuantityElement">
+                    <p class="productProperty">Quantity (pieces)</p>
+                    <div class="stockElement">
+                        <button class="cartIncrase">+</button>
+                        <p class="productQuantity">1</p>
+                        <button class="cartDecrase">-</button>
+                    </div>
+                </div>
+
+                <button class="add_to_cart removeToCartButton">
+                    <i class="fas fa-cart-shoping"></i>
+                    remove
+                </button>
+            </article>
+        </div>
+    </template>
+    <!-- Footer  -->
+
+     <footer>
+        <div class="container grid four-grid--cols">
+            <div class="footer-1--div">
+                <div class="logo-brand">
+                    <a href="index.html" class="footer-subheading"></a>
+                </div>
+                <p>ABOUT </p>
+                <div class="social-footer--icon">
+                 
+                    <ul>
+                        <li>Careers</li>
+                        <li>  Stories</li>
+                        <li> Press</li>
+                        <li>Corporate Informationt</li>
+    
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-2--div">
+                <p class="footer-subheading">Shoping</p>
+                <ul>
+                    <li>computer store</li>
+                    <li>laptop store</li>
+                    <li>accessories</li>
+                    <li>sales & discount</li>
+
+                </ul>
+
+            </div>
+            <div class="footer-3--div">
+                <p class="footer-subheading"> experience </p>
+                <ul>
+                    <li><a href="index.html">contat us</a></li>
+                    <li><a href="index.html">payment method</a></li>
+                    <li><a href="index.html">delivery</a></li>
+                    <li><a href="index.html">return and exchange</a></li>
+
+                </ul>
+
+            </div>
+            <div class="footer-4--div">
+                <p class="footer-subheading">privacy</p>
+                <ul>
+                    <li><a href="index.html">Security</a></li>
+                    <li><a href="index.html">Sitemap</a></li>
+                    <li><a href="index.html">Grievance Redressal</a></li>
+                    <li><a href="index.html">EPR Complian</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="ShowCart/showAddToCart.js"></script>
+</body>
+
+</html>

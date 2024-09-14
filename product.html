@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-commerce</title>
+</head>
+
+<body>
+  <header class="section_navbar">
+    <section class="top_text">
+      <div class="head container">
+        <div class="head_text">
+          <p>Free shiping 30 day return or refund guarentee</p>
+        </div>
+        <div class="sign_in_up">
+          <a href="#">SIGN IN</a>
+          <a href="#">SIGN UP</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- For navBar -->
+
+    <div class="container navBar">
+      <div class="navBar_brand">
+        <a href="index.html">
+          <div class="logo">
+            <p>E-Cart</p>
+           </div>
+        </a>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li class="nav_item"><a href="/" class="nav_link">Home</a></li>
+          <li class="nav_item"><a href="about.html" class="nav_link">About</a></li>
+          <li class="nav_item"><a href="product.html" class="nav_link">Product</a></li>
+          <li class="nav_item"><a href="contact.html" class="nav_link">contact</a></li>
+          <li class="navItem">
+            <a href="addToCart.html" class='navlink add_To_cart_button' id="cartValue">
+              <i class="fas fa-cart-shopping">0</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  
+  <!-- product section  -->
+
+  <section class="section_product">
+    <div class="container">
+      <div class="section_common_heading">
+        check out in the store
+      </div>
+    </div>
+    <section class="container">
+      <div id="productConainer"> </div>
+    </section>
+  </section>
+
+  <!-- TEMPLET SEECETION -->
+  <template id="productTemplet">
+    <div class="cards" id="cardValue">
+      <article class="information_card">
+        <span class="catogary"> ... </span>
+        <div class="imageContainer">
+          <img class="productImage" src="" alt="">
+        </div>
+
+        <h2 class="productName">Name </h2>
+        <div class="productRating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+
+        <p class="productDescription"> </p>
+
+        <div class="productPriceElememt">
+          <p class="productPrice"></p>
+          <p class="actualPrice"></p>
+        </div>
+
+        <div class="productStockElemnt">
+          <p class="prductProperty">Total stock available : </p>
+          <p class="productStock"></p>
+        </div>
+
+        <div class="productQuantityElement">
+          <p class="productProperty">Quantity (pieces)</p>
+          <div class="stockElement">
+            <button class="cartIncrase">+</button>
+            <p class="productQuantity">1</p>
+            <button class="cartDecrease">-</button>
+          </div>
+        </div>
+
+        <button class="add_to_cart">
+          <i class="fas fa-cart-shoping"></i>
+          Add to cart
+        </button>
+      </article>
+    </div>
+  </template>
+
+
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>

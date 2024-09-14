@@ -1,0 +1,64 @@
+[
+    {
+        "id":1,
+        "name":"Laptop",
+        "category":"computer",
+        "brand":"lenevo",
+        "price":"999.99",
+        "stock":"50",
+        "image":"./image/img1.webp",
+        "description":"HP Chromebook Intel Celeron Quad Core N4120"
+    },
+    {
+        "id":2,
+        "name":"Earphone",
+        "category":"Audio",
+        "brand":"lenevo",
+        "price":"999.99",
+        "stock":"50",
+        "image":"./image/img2.avif",
+        "description":"MZ NB111 (Wireless Headphone) 250h standby 200mAh Bluetooth  (Black, In the Ear)"
+    },
+    {
+        "id":3,
+        "name":"Iphone",
+        "category":"Mobile",
+        "brand":"lenevo",
+        "price":"999.99",
+        "stock":"50",
+        "image":"./image/img3.jpg",
+        "description":"Apple iPhone 15 (Blue, 128 GB)"
+    },
+    {
+        "id":4,
+        "name":"Reebok Shoes",
+        "category":"computer",
+        "brand":"lenevo",
+        "price":"999.99",
+        "stock":"50",
+        "image":"./image/img4.jpg",
+        "description":"SUPER SPEED Running Shoes For Men  (Black , 8)"
+    },
+    {
+        "id":5,
+        "name":"Bluetoth Home Theater",
+        "category":"Music",
+        "brand":"lenevo",
+        "price":"999.99",
+        "stock":"50",
+        "image":"./image/img5.jpg",
+        "description":"Vox V7171 Real 7.1 with 90 W Bluetooth Home Theatre  (Black, 7.1 Channel)"
+    },
+    {
+        "id":6,
+        "name":"Mens Jeans",
+        "category":"Clothing",
+        "brand":"lenevo",
+        "price":"999.99",
+        "stock":"50",
+        "image":"./image/img7.jpg",
+        "description":"Men Regular Mid Rise Black Jeans"
+    }
+]
+
+
